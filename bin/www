@@ -87,4 +87,5 @@ function onListening() {
     ? 'pipe ' + addr
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
+  console.log(`Servidor web iniciado en http://${addr.address === '::' ? 'localhost' : addr.address}:${addr.port}`);
 }
